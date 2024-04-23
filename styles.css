@@ -1,0 +1,281 @@
+:root {
+    --primary-color: #F4F7FA;
+    --border-color: #eaeaea;
+    --text-color: #333;
+    --fixed-padding: 20px;
+}
+
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.logo {
+    display: block;
+    width: 150px; /* Adjust to your logo's aspect ratio */
+    height: 50px; /* Reduce the height if necessary */
+    background-image: url('https://static-bucket.prod-monto.assets.monto.ai/democo/democo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto 0; /* Center logo vertically within the nav bar */
+}
+.top-nav {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+}
+.top-nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-right: var(--fixed-padding);
+    flex-shrink: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.center-panel {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #FFFFFF; 
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 0; 
+    border-radius: 20px;
+}
+.center-panel::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background: linear-gradient(to bottom, #53a096 0%, #FFFFFF 50%); 
+    z-index: -1; 
+    border-radius: inherit; 
+}
+.center-panel > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+h2 {
+    font-size: 40px;
+    margin: 0 0 20px;
+    font-weight: normal;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+    font-style: oblique;
+    
+}
+p {
+    font-size: 22px;
+    margin: 0 0 30px;
+    font-weight: 100;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+    font-style: oblique;
+}
+
+
+.nav-link, .login-btn, .apply-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background: none;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.nav-link:hover, .login-btn:hover {
+    color: #094c4c;
+}
+.apply-btn {
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #0056b3;
+    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.apply-btn:hover {
+    background-color: #007BFF;
+}
+
+
+.bottom-options {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-top: 1px solid #eaeaea;
+}
+.bottom-options > div {
+    text-align: center;
+    font-size: 14px; 
+    color: #333;
+}
+
+
+.search-box {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+.form-container {
+    width: 80%;
+    max-width: 500px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+input[type=text], input[type=tel], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.input-group {
+    max-width: 500px; 
+    margin-right: auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+}
+
+           
+.info-text {
+    font-weight: bold;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.helper-text {
+    text-align: right;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #333;
+    margin-left: auto; 
+}
+
+
+.checkmark-svg {
+    fill: #4CAF50; /* SVG color */
+    width: 100px; /* SVG size */
+    height: 100px; /* SVG size */
+    margin-bottom: 24px; /* Space below the SVG */
+}
+
+
+button.success-btn {
+    padding: 15px 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 40px
+}
+button.success-btn:hover {
+    background-color: #007BFF;
+    /* box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5); */
+}
+
+
+button.connect-btn {
+    padding:  15px 40px;
+    background-color: #0056b3;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+button.connect-btn:hover {
+    background-color: #007BFF;
+    /* box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5); */
+}
+
+
+button.next-btn {
+    padding: 15px 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: absolute;
+    bottom: -100px;
+    right: -250px;
+}
+button.next-btn:hover {
+    background-color: #007BFF;
+}
+
+
+button.demo-btn {
+    padding: 15px 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 40px;
+}
+button.demo-btn:hover {
+    background-color: #007BFF;
+    /*box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);*/
+}

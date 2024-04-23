@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="top-nav">
+
+        <a href="/" class="logo"></a>
+
+        <!--<input type="text" class="search-box" placeholder="Sök">-->
+
+        <div>
+           <!--<button class="nav-link">Sve</button>-->
+           <button class="nav-link">Företagslån</button>
+           <button class="nav-link">Embedded</button>
+           <button class="nav-link">Frågor & Svar</button>
+           <button class="login-btn">Logga in</button>
+           <!--<button class="apply-btn">Ansök</button>-->
+        </div>
+
+        <div class="helper-text">
+           Behövs hjälp? 08-123 321 00 support@demo.co
+        </div>
+
+    </div>
+
+    <div class="center-panel">
+
+        <h2>Tack för att du skickar in dina uppgifter</h2>
+
+        <p>Din information har mottagits. Klicka nedan för att fortsätta.</p>
+
+        <button type="button" onclick="connect()" class="connect-btn">Koppla ditt ERP system</button>
+
+    </div>
+
+    <script>
+
+        function connect() {
+            window.location.href = "https://connect.monto.ai/sv-SE/9eb17bcb-90c0-41c4-b280-dcd1ef5b0189/companies/95d5ff17-2aa5-41b8-9d05-88e2afa68c43/link/accounting"; /* Redirect to the form page */
+        }
+
+    </script>
+</body>
+</html>

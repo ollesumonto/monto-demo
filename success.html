@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Success</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="top-nav">
+
+        <a href="/" class="logo"></a>
+
+        <!--<input type="text" class="search-box" placeholder="Sök">-->
+
+        <div>
+           <!--<button class="nav-link">Sve</button>-->
+           <button class="nav-link">Företagslån</button>
+           <button class="nav-link">Embedded</button>
+           <button class="nav-link">Frågor & Svar</button>
+           <button class="login-btn">Logga in</button>
+           <!--<button class="apply-btn">Ansök</button>-->
+        </div>
+
+        <div class="helper-text">
+           Behövs hjälp? 08-123 321 00 support@demo.co
+        </div>
+
+    </div>
+
+    <div class="center-panel">
+
+        <svg class="checkmark-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 6.45029L8.65714 18.7931L3 13.136L4.45029 11.6857L8.65714 15.8823L19.5497 5L21 6.45029Z"/>
+        </svg>
+
+        <h2>Du är nu färdig!</h2>
+
+        <p>Din sandbox är nu ansluten.</p>
+
+        <button type="button" onclick="success()" class="success-btn">Fortsätt</button>
+    </div>
+
+    <script>
+
+        function sucess() {
+            window.location.href = "/";
+        }
+        
+    </script>
+</body>
+</html>

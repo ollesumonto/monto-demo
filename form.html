@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="top-nav">
+
+        <a href="/" class="logo"></a>
+
+        <!--<input type="text" class="search-box" placeholder="Sök">-->
+
+        <div>
+           <!--<button class="nav-link">Sve</button>-->
+           <button class="nav-link">Företagslån</button>
+           <button class="nav-link">Embedded</button>
+           <button class="nav-link">Frågor & Svar</button>
+           <button class="login-btn">Logga in</button>
+           <!--<button class="apply-btn">Ansök</button>-->
+        </div>
+
+        <div class="helper-text">
+           Behövs hjälp? 08-123 321 00 support@demo.co
+        </div>
+
+    </div>
+
+    <div class="center-panel">
+        <form>
+
+            <h2>Låt oss börja med din ansökan</h2>
+
+            <div class="input-group">
+                <label for="amount">Belopp</label>
+                <input type="text" id="amount" placeholder="Belopp">
+            </div>
+            
+            <div class="input-group">
+                <label for="org-number">Organisationsnummer</label>
+                <input type="text" id="org-number" placeholder="Organisationsnummer">
+            </div>
+            
+            <div class="input-group">
+                <label for="mobile-number">Mobilnummer</label>
+                <input type="text" id="mobile-number" placeholder="Mobilnummer">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-post</label>
+                <input type="text" id="email" placeholder="E-post">
+            </div>
+
+            <button type="button" onclick="next()" class="next-btn">Nästa</button>
+        </form>
+    </div>
+    <script>
+        function next() {
+            window.location.href = "confirmation"; /* Redirect to the form page */
+        }
+    </script>
+</body>
+</html>
